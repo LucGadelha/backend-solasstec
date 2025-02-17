@@ -40,6 +40,7 @@ npm install
 Após instalar as dependências, execute os seguintes comandos para configurar o banco de dados com Prisma:
 
 ```bash
+npx prisma db push
 npx prisma generate
 npx prisma migrate deploy
 ```
@@ -49,6 +50,16 @@ Caso seja necessário carregar dados iniciais de setores e tipos de documentos, 
 ```bash
 npm run seed
 ```
+
+## 🛑 Problema com SSL no Prisma?
+
+Caso ocorra algum erro relacionado a SSL ao rodar os comandos do Prisma, utilize o seguinte comando:
+
+```bash
+NODE_TLS_REJECT_UNAUTHORIZED=0 npx prisma generate
+```
+
+Isso desativa a verificação de SSL para conexões TLS, permitindo que o Prisma funcione corretamente em ambientes com certificados não confiáveis.
 
 
 ## 🚀 Executando o Projeto
