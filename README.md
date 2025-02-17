@@ -1,5 +1,5 @@
 
-#🚀 Inicializando o Projeto
+# 🚀 Inicializando o Projeto
 
 ## 📂 Configuração do Banco de Dados
 
